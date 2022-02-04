@@ -1,0 +1,82 @@
+
+.hero {
+    background-image: linear-gradient(
+                      rgba(47, 48, 58, 0.4), 
+                      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+    background-color: rgba(47, 48, 58, 0.4);
+    background-repeat: no-repeat;
+    background-size: 1600px;
+    background-position: center;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  
+  .hero__header {
+
+    @include tel {
+     position: relative;
+    }
+
+    // @include tab {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   flex-direction: column;
+    // }
+    // @include desk {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   flex-direction: column;
+    // }
+  }
+  
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @include tab {
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+    }
+
+    @include desk {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+  
+  .button {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: var(--second-font-color);
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 10px 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    border-color: transparent;
+    
+      &:hover, &:focus {
+      background-color: #188CE8;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+    }
+  } 
+  

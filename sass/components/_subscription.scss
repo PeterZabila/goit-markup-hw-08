@@ -1,0 +1,89 @@
+
+.input-wrapper {
+    width: 570px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .subscription-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .subscription-email {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px4px4pxrgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+      border-color: var(--second-font-color);
+      color: #fff;
+    }
+    &:focus::placeholder {
+      opacity: 0;
+     }
+    &::placeholder {
+      color: var(--base-font-color);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover::placeholder {
+      color: var(--second-font-color);
+    }
+  }
+    
+  .subscription-button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--second-font-color);
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    position: relative;
+    border-color: transparent;
+      &:hover, &:focus, &:active   {
+        background-color: #188CE8;
+        outline: none;
+      }
+      &:after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/send.png);
+        position: absolute;
+        top: 13px;
+        left: 148px;
+        display: inline-block;
+        border-color: transparent;
+      }
+  } 
+  
+  
+  .button-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 29px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+  }
+  

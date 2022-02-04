@@ -1,0 +1,68 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.cell {
+  width: 0.625em;
+}
+
+.clock {
+  width: 0.9716796875em;
+}
+
+.envelope-hover {
+  width: 1.3330078125em;
+}
+
+.facebook {
+  width: 0.5498046875em;
+}
+
+.laptop {
+  width: 1.2958984375em;
+}
+
+.logo1 {
+  width: 1.7666015625em;
+}
+
+.Logo2 {
+  width: 1.7666015625em;
+}
+
+.logo3 {
+  width: 1.7666015625em;
+}
+
+.logo4 {
+  width: 1.7666015625em;
+}
+
+.logo5 {
+  width: 1.7666015625em;
+}
+
+.logo6 {
+  width: 1.7666015625em;
+}
+
+.radar {
+  width: 0.9423828125em;
+}
+
+.twitter {
+  width: 1.111328125em;
+}

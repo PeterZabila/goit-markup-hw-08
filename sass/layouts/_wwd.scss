@@ -1,6 +1,21 @@
 .wwd {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    @include tel {
+      position: absolute;
+      transform: rotateY(100%); ////ХЗХЗХЗ
+      visibility: hidden;
+    }
+    @include tab {
+      position: absolute;
+      visibility: hidden;
+      transform: rotateY(100%); ////ХЗХЗХЗ
+    }
+    @include desk {
+      visibility: visible;
+      position: absolute;
+      transform: rotateY(-100%); ////ХЗХЗХЗ
+      padding-bottom: 94px;
+      padding-top: 94px;
+    }
   }
 
   .wwd__title {

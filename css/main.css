@@ -388,19 +388,19 @@ header {
 
 @media screen and (min-width: 480px) {
   .wwd {
-    visibility: hidden;
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .wwd {
-    visibility: hidden;
+    display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .wwd {
-    visibility: visible;
+    display: block;
     padding-bottom: 94px;
     padding-top: 94px;
   }

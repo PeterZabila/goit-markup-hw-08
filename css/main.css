@@ -388,25 +388,19 @@ header {
 
 @media screen and (min-width: 480px) {
   .wwd {
-    position: absolute;
-    transform: rotateY(100%);
     visibility: hidden;
   }
 }
 
 @media screen and (min-width: 768px) {
   .wwd {
-    position: absolute;
     visibility: hidden;
-    transform: rotateY(100%);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .wwd {
     visibility: visible;
-    position: absolute;
-    transform: rotateY(-100%);
     padding-bottom: 94px;
     padding-top: 94px;
   }

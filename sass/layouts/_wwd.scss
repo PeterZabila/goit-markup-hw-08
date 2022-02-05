@@ -1,18 +1,19 @@
 .wwd {
     @include tel {
-      position: absolute;
-      transform: rotateY(100%); ////ХЗХЗХЗ
+      // position: absolute;
+      // transform: rotateY(100%); ////ХЗХЗХЗ
       visibility: hidden;
     }
     @include tab {
-      position: absolute;
+      // position: absolute;
+      // transform: rotateY(100%); ////ХЗХЗХЗ
       visibility: hidden;
-      transform: rotateY(100%); ////ХЗХЗХЗ
+      
     }
     @include desk {
+      // position: absolute;
+      // transform: rotateY(-100%); ////ХЗХЗХЗ
       visibility: visible;
-      position: absolute;
-      transform: rotateY(-100%); ////ХЗХЗХЗ
       padding-bottom: 94px;
       padding-top: 94px;
     }

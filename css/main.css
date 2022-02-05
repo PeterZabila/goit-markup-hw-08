@@ -260,6 +260,28 @@ header {
   background-color: #F5F4FA;
 }
 
+@media screen and (min-width: 480px) {
+  .advant__svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F5F4FA;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advant__svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+  }
+}
+
 .radar {
   width: 65.32px;
   height: 70px;
@@ -298,25 +320,63 @@ header {
   flex-wrap: wrap;
 }
 
-.advant__item {
-  font-family: var(--base-font);
-  margin-left: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+@media screen and (min-width: 480px) {
+  .advant__item {
+    font-family: var(--base-font);
+    width: 100%;
+  }
 }
 
-.advant__item:first-child {
-  margin-left: 0px;
+@media screen and (min-width: 768px) {
+  .advant__item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  .advant__item:first-child {
+    margin-left: 0px;
+  }
+  .advant__item:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .advant__item:nth-child(3) {
+    margin-left: 0;
+  }
 }
 
-.advant__title {
-  font-family: var(--base-font);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
+@media screen and (min-width: 1200px) {
+  .advant__item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+  }
+  .advant__item:first-child {
+    margin-left: 0px;
+  }
+  .advant__item:nth-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .advant__item:nth-child(3) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .advant__title {
+    font-family: var(--base-font);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advant__title {
+    text-align: left;
+  }
 }
 
 .advant__description {

@@ -1,19 +1,43 @@
 
 .input-wrapper {
+  @include tel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include tab {
+    display: flex;
+    
+    justify-content: center;
+    
+  }
+
+  @include desk {
     width: 570px;
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
+  }
   }
   
   .subscription-title {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 20px;
-    display: block;
+    @include tel {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      display: block;
+      text-align: center;
+    }
+    
+    @include desk {
+      text-align: left;
+    }
+      
   }
   
   .subscription-email {
@@ -40,6 +64,16 @@
     }
     &:hover::placeholder {
       color: var(--second-font-color);
+    }
+
+    @include tel {
+      margin-bottom: 20px;
+    }
+    @include tab {
+      margin-bottom: 20px;
+    }
+    @include desk {
+      margin-bottom: 0;
     }
   }
     

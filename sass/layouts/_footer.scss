@@ -6,10 +6,51 @@ footer {
   
   .footer {
     display: flex;
+
+    @include tel {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @include tab {
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include desk {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
   }
   
   .f-address {
     display: flex;
+    justify-content: center;
+
+
+    @include tel {
+      justify-content: center;
+      margin-bottom: 20px;
+    } 
+
+    @include tab {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    @include desk {
+      justify-content: left;
+      margin-bottom: 0;
+    }
+  }
+
+  .address {
+    @include tel {
+      // display: flex;
+      // flex-direction: column;
+      justify-content: center;
+    }
   }
   
   //LOGO
@@ -22,6 +63,17 @@ footer {
     font-size: 26px;
     line-height: 1.19;
     color: var(--second-font-color);
+
+    @include tel {
+      text-align: center;
+      }
+  
+      @include tab {
+        text-align: center;
+      }
+      @include desk {
+        text-align: left;
+      }
   }
   
   .footer-logo--span {
@@ -43,6 +95,18 @@ footer {
     color: #ffffff;
     font-style: normal;
     margin-bottom: 9px;
+  
+    @include tel {
+    text-align: center;
+    }
+
+    @include tab {
+      text-align: center;
+    }
+    @include desk {
+      text-align: left;
+    }
+
   }
   
   .address__mail,
@@ -53,6 +117,16 @@ footer {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     display: block;
+    @include tel {
+      text-align: center;
+      }
+  
+      @include tab {
+        text-align: center;
+      }
+      @include desk {
+        text-align: left;
+      }
   }
   
   .address__mail {
@@ -62,9 +136,24 @@ footer {
   //JOINUS
   .join-us {
     display: flex;
-    margin-left: 70px;
     flex-direction: column;
-    margin-right: 93px;
+
+    @include tel {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    } 
+
+    @include tab {
+      margin-bottom: 20px;
+    }
+    
+    @include desk {
+      justify-content: left;
+      margin-left: 70px; 
+      margin-right: 93px;
+      margin-bottom: 0;
+    }
   }
   
   .join-us__header {
@@ -74,6 +163,18 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
+    @include tel {
+      text-align: center;
+    } 
+
+    @include tab {
+      text-align: center;
+    }
+    
+    @include desk {
+      text-align: left;
+    }
   }
   
   /* FOOTER SOCAIL MEDIA */

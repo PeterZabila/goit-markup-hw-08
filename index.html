@@ -45,29 +45,31 @@
                 +38 096 111 11 11</a>
             </div>
             
-          <button type="button" class="menu-open-button">
+          <button type="button" class="menu-open-button" data-menu-open>
             <svg class="menu-open-button__icon">
               <use href="./images/icons.svg#menu"></use>
             </svg>
           </button>
 
-          <div class="mob-menu">
-            <button type="button" class="menu-close-button">
+          <div class="mob-menu is-hidden" data-menu>
+            <div class="container container__mob">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-button" data-menu-close>
               <svg class="menu-close-button__icon">
                 <use href="./images/icons.svg#close"></use>
               </svg>
             </button>
          
-
-          <nav class="mob-nav">
-            <ul class="mob-nav__list">
-              <li class="mob-nav__item"><a class="mob-nav__link current" href="./index.html">Студия</a></li>
-              <li class="mob-nav__item"><a class="mob-nav__link " href="./portfolio.html">Портфолио</a></li>
-              <li class="mob-nav__item"><a class="mob-nav__link " href="">Контакты</a></li>
-            </ul>
-          </nav>
-
+            <nav class="mob-nav">
+              <ul class="mob-nav__list">
+                <li class="mob-nav__item"><a class="mob-nav__link current" href="./index.html">Студия</a></li>
+                <li class="mob-nav__item"><a class="mob-nav__link " href="./portfolio.html">Портфолио</a></li>
+                <li class="mob-nav__item"><a class="mob-nav__link " href="">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
       <!-- contacts -->
+      <div class="mob-menu-bottom">
           <div class="mob-contact">
             <a class="mob-contact__tel" href="tel:+380961111111">
              
@@ -100,6 +102,9 @@
               </a>
             </li>
           </ul>
+
+      </div>
+        </div>
         </div>
 
           </div>
@@ -546,5 +551,6 @@
       </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -43,20 +43,41 @@ header {
     }
   }
 
+  .container__mob {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
 
   .mob-menu {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
     width: 480px;
+    opacity: 1;
+    transform: translate(0);
+    transition: transform 500ms, visibility 500ms;
+
     @include tel {
       width: 100%;
-      padding-left: 40px;
+      
       padding-top: 48px;
-
-  
+      padding-bottom: 40px;
     }
     
     @include desk {
       display: none;
     }
+  }
+
+  .mob-menu.is-hidden {
+    transform: translate(100%);
+    opacity: 0;
   }
 
 
@@ -97,6 +118,10 @@ header {
     fill: black;
     width: 18.67px;
     height: 18.67px;
+    margin-bottom: 8.33px;;
+      &:hover, &:focus {
+        fill: var(--second-font-color);
+      }
   }
 
 
@@ -104,8 +129,8 @@ header {
   .mob-nav {
     display: flex;
     flex-direction: column;
-
   }
+
 
   .mob-nav__list {
     list-style: none;
@@ -152,6 +177,10 @@ header {
         letter-spacing: 0.02em;
         color: #757575;
         text-decoration: none;
+        width: 231px;
+        &:active {
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        }
       }
 
 
@@ -167,6 +196,7 @@ header {
         height: 100%;
         border: 1px solid rgba(33, 33, 33, 0.2);
         transform: rotate(90deg);
+        margin-right: 15px;
       }
       .mob-sm__item:not(:first-child) {
           margin-left: 20px;

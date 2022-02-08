@@ -1293,16 +1293,6 @@ footer {
   padding-bottom: 94px;
 }
 
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  text-decoration: none;
-  list-style-type: none;
-  cursor: pointer;
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
-
 .port {
   display: flex;
   flex-wrap: wrap;
@@ -1341,7 +1331,7 @@ footer {
 
 .port__overlay {
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 294px;
   overflow: hidden;
 }

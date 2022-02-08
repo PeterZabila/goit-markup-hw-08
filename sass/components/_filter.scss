@@ -1,20 +1,50 @@
 
   
   .filter {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-    cursor: pointer;
-    margin-left: -8px;
-    margin-bottom: 50px;
+    @include tel {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    
+      margin-bottom: 50px; 
+    }
+
+    @include tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      text-decoration: none;
+      list-style-type: none;
+      cursor: pointer;
+      margin-left: -8px;
+      margin-bottom: 50px; 
+    }
+
+    @include desk {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+      list-style-type: none;
+      cursor: pointer;
+      margin-left: -8px;
+      margin-bottom: 50px;
+    }
   }
 
   .filter__item {
     display: flex;
-      &:not(:last-child) {
-        margin-right: 8px;
+      
+      @include tel {
+        margin-bottom: 15px;
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+      }
+
+      @include tab {
+        margin-bottom: 0;
       }
   }
  

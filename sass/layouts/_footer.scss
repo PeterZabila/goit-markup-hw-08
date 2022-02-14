@@ -31,17 +31,16 @@ footer {
 
     @include tel {
       justify-content: center;
-      margin-bottom: 20px;
+    
     } 
 
     @include tab {
       justify-content: center;
-      margin-bottom: 20px;
+     
     }
     
     @include desk {
       justify-content: left;
-      margin-bottom: 0;
     }
   }
 

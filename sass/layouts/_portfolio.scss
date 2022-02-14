@@ -5,7 +5,6 @@
   }
 
 
-  
   .port {
     display: flex;
     flex-wrap: wrap;
@@ -16,9 +15,7 @@
     margin-bottom: -30px;
   }
   
-  .port__item {
-
-    
+  .port__item { 
     flex-direction: column;
     outline: 1px solid #eeeeee;
     box-sizing: border-box;
@@ -34,21 +31,25 @@
       }
 
       @include tel {
-        width: 100%;
-        margin-bottom: 30px;
-       
+        @media screen and (max-width: 767px) {
+          width: 100%;
+            &:not(:last-child) {
+            margin-bottom: 30px;
+          }
+        }
       }
 
       @include tab {
-
         @media screen and (max-width: 1199px) {
           width: calc(100% / 2 - 30px);
           margin-right: 30px;
           &:nth-child(2n) {
             margin-right: 0;
           }
-        }
-        
+          &:not(:last-child) {
+            margin-bottom: 30px;
+          }
+        } 
       }
 
       @include desk {

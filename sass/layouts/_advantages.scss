@@ -64,6 +64,13 @@
           padding-bottom: 60px;
         }
       }
+
+      @include tab {
+        @media screen and (max-width: 1199px) {
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+      }
   }
   
   .advant {
@@ -76,36 +83,35 @@
 
     @include tel {
       font-family: var(--base-font);
-      width: 100%;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+            &:not(:last-child) {
+            margin-bottom: 30px;
+            }
+        }
     }
 
     @include tab {
-      margin-left: 30px;
-      flex-basis: calc(100% / 2 - 30px);
-       
-        &:first-child {
-          margin-left: 0px;
-        }
-        &:nth-child(-n+2) {
-        margin-bottom: 30px;
-        }
-        &:nth-child(3) {
-        margin-left: 0;
+        @media screen and (max-width: 1199px) {
+          margin-right: 30px;
+          flex-basis: calc(100% / 2 - 30px);
+          
+            &:nth-child(-n+2) {
+              margin-bottom: 30px;
+            }
+            &:nth-child(2n) {
+              margin-right: 0;
+            }
         }
       }
 
     @include desk {
-    margin-left: 30px;
-    flex-basis: calc(100% / 4 - 30px);
-      &:first-child {
-        margin-left: 0px;
+      flex-basis: calc(100% / 4 - 30px);
+
+      &:not(:last-child) {
+        margin-right: 30px;
       }
-      &:nth-child(-n+2) {
-        margin-bottom: 0;
-        }
-        &:nth-child(3) {
-        margin-left: 30px;
-        }
+     
     }
   }
   

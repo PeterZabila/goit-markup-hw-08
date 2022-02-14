@@ -521,6 +521,13 @@ header {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .advant {
   list-style-type: none;
   display: flex;
@@ -530,39 +537,37 @@ header {
 @media screen and (min-width: 480px) {
   .advant__item {
     font-family: var(--base-font);
-    width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .advant__item {
-    margin-left: 30px;
-    flex-basis: calc(100% / 2 - 30px);
+    width: 100%;
   }
-  .advant__item:first-child {
-    margin-left: 0px;
+  .advant__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advant__item {
+    margin-right: 30px;
+    flex-basis: calc(100% / 2 - 30px);
   }
   .advant__item:nth-child(-n+2) {
     margin-bottom: 30px;
   }
-  .advant__item:nth-child(3) {
-    margin-left: 0;
+  .advant__item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advant__item {
-    margin-left: 30px;
     flex-basis: calc(100% / 4 - 30px);
   }
-  .advant__item:first-child {
-    margin-left: 0px;
-  }
-  .advant__item:nth-child(-n+2) {
-    margin-bottom: 0;
-  }
-  .advant__item:nth-child(3) {
-    margin-left: 30px;
+  .advant__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -681,6 +686,12 @@ header {
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 767px) {
+  .team-section {
+    padding: 60px 0;
+  }
+}
+
 .team-title {
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -744,6 +755,12 @@ header {
   .team__item {
     display: block;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__item {
+    margin-bottom: 30px;
   }
 }
 
@@ -928,18 +945,8 @@ header {
 .clients-list {
   list-style-type: none;
   display: flex;
-}
-
-@media screen and (min-width: 480px) {
-  .clients-list {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .clients-list {
-    flex-wrap: wrap;
-  }
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 1200px) {
@@ -948,18 +955,22 @@ header {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-list__item {
     width: calc(100% / 2 - 30px);
   }
   .clients-list__item:nth-child(-n+4) {
     margin-bottom: 30px;
   }
+  .clients-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list__item {
     width: calc(100% / 3 - 30px);
+    justify-content: center;
   }
   .clients-list__item:nth-child(-n+3) {
     margin-bottom: 30px;
@@ -968,8 +979,11 @@ header {
 
 @media screen and (min-width: 1200px) {
   .clients-list__item {
-    width: 170px;
+    width: calc(100% / 6 - 30px);
     height: 92px;
+  }
+  .clients-list__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -987,10 +1001,6 @@ header {
 
 .clients-list__box:hover, .clients-list__box:active, .clients-list__box:focus {
   border: 1px solid var(--second-font-color);
-}
-
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients-list__icon {
@@ -1328,9 +1338,11 @@ footer {
   opacity: 1;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .port__item {
     width: 100%;
+  }
+  .port__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1342,6 +1354,9 @@ footer {
   }
   .port__item:nth-child(2n) {
     margin-right: 0;
+  }
+  .port__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1439,7 +1454,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1448,11 +1463,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -8px;
+    margin-bottom: 30px;
     text-decoration: none;
     list-style-type: none;
     cursor: pointer;
-    margin-left: -8px;
-    margin-bottom: 50px;
   }
 }
 

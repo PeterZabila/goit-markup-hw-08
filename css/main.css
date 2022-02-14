@@ -514,6 +514,13 @@ header {
   justify-content: center;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .advant {
   list-style-type: none;
   display: flex;

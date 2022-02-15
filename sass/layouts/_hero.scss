@@ -15,29 +15,49 @@
     padding-bottom: 118px;
   
       @media (min-resolution: 2dppx) {
-          background-image: url(../images/hero-mobile-2x.jpg);
+          background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero-mobile-2x.jpg);
       }
   }
    
     @include tab {
-      background-image: url(../images/hero-tablet.jpg);
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-tablet.jpg);
       height: 400px;
       padding-top: 118px;
       padding-bottom: 118px;
         @media (min-resolution: 2dppx) {
-          background-image: url(../images/hero-tablet-2x.jpg);
+          background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/hero-tablet-2x.jpg);
         }
     }
 
 
     @include desk {
-      background-image: url(../images/hero.jpg);
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero.jpg);
       height: 600px;
       padding-top: 200px;
       padding-bottom: 200px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url(../images/hero-2x.jpg);
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4), 
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-2x.jpg);
       }
     }
   }

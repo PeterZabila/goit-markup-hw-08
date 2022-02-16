@@ -15,6 +15,13 @@
     }
   }
 
+  .container {
+    @include tel {
+      padding: 0;
+    }
+   
+  }
+
   .clients-title {
     font-family: var(--base-font);
     font-weight: bold;

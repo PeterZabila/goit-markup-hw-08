@@ -788,10 +788,6 @@ header {
   }
 }
 
-.team__container {
-  padding: 0;
-}
-
 .team-title {
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -1022,6 +1018,12 @@ header {
   .container {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    padding: 0;
   }
 }
 
@@ -1584,6 +1586,8 @@ footer {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1596,6 +1600,8 @@ footer {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

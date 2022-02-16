@@ -1,8 +1,20 @@
 .clients-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include tel {
+      padding: 60px 0;
+    }
+
+    @include desk {
+      padding: 94px 0;
+    }
   }
-  
+
+  @media screen and (max-width: 1199px) {
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
   .clients-title {
     font-family: var(--base-font);
     font-weight: bold;
@@ -25,7 +37,16 @@
   
   .clients-list-wrap {
     display: flex;
-    margin-top: 50px;
+    
+    @include tel {
+      margin-top: 30px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    
+    @include desk {
+      margin-top: 50px;
+    }
   }
   
   .clients-list {
@@ -33,6 +54,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    @include tel {
+      padding: 0;
+    }
 
       @include desk {
         flex-wrap: nowrap;
@@ -43,7 +68,7 @@
   .clients-list__item {
     @include tel {
       @media screen and (max-width: 767px) {
-        width: calc(100% / 2 - 30px);
+        width: 210px;
         
         &:nth-child(-n+4) {
           margin-bottom: 30px;

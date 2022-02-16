@@ -57,14 +57,46 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.header {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
+@media screen and (min-width: 480px) {
+  .header {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
-.logo {
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -74,12 +106,6 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .nav {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .nav {
     display: flex;
   }
@@ -93,13 +119,14 @@ header {
 
 @media screen and (min-width: 768px) {
   .contact {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 54px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contact {
-    display: flex;
     display: flex;
     margin-left: auto;
   }
@@ -134,6 +161,12 @@ header {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .mob-menu {
     display: none;
@@ -154,6 +187,12 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+  .menu-open-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .menu-open-button {
     display: none;
   }
@@ -340,6 +379,27 @@ header {
   line-height: 1.17;
   font-weight: 500;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__mail,
+  .contact__tel {
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__tel {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__tel {
+    margin-left: 30px;
+  }
 }
 
 .contact__mail--envelope {
@@ -372,10 +432,6 @@ header {
 .contact__tel:active .contact__tel--cell,
 .contact__tel:focus .contact__tel--cell {
   fill: currentColor;
-}
-
-.contact__tel {
-  margin-left: 30px;
 }
 
 .contact__mail:hover,
@@ -719,21 +775,26 @@ header {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.team-section {
-  padding: 94px 0;
-  background-color: #f5f4fa;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .team-section {
     padding: 60px 0;
+    background-color: #f5f4fa;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding: 94px 0;
+  }
+}
+
+.team__container {
+  padding: 0;
 }
 
 .team-title {
   font-weight: 700;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -741,6 +802,7 @@ header {
   .team-title {
     font-size: 28px;
     line-height: 1.17;
+    margin-bottom: 30px;
   }
 }
 
@@ -748,6 +810,7 @@ header {
   .team-title {
     font-size: 28px;
     line-height: 1.17;
+    margin-bottom: 30px;
   }
 }
 
@@ -755,6 +818,7 @@ header {
   .team-title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -942,9 +1006,23 @@ header {
   height: 20px;
 }
 
-.clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .clients-section {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-section {
+    padding: 94px 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .clients-title {
@@ -977,7 +1055,20 @@ header {
 
 .clients-list-wrap {
   display: flex;
-  margin-top: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list-wrap {
+    margin-top: 30px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-wrap {
+    margin-top: 50px;
+  }
 }
 
 .clients-list {
@@ -985,6 +1076,12 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -996,7 +1093,7 @@ header {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-list__item {
-    width: calc(100% / 2 - 30px);
+    width: 210px;
   }
   .clients-list__item:nth-child(-n+4) {
     margin-bottom: 30px;
@@ -1340,8 +1437,27 @@ footer {
 
 .portfolio-section {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .port {
@@ -1744,24 +1860,6 @@ footer {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .modal {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 767px) {
-  .modal {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-  }
-}
-
 .modal-close {
   width: 30px;
   height: 30px;
@@ -1797,6 +1895,24 @@ footer {
 
 .form {
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    width: 528px;
+  }
 }
 
 .form__title {
@@ -1921,11 +2037,22 @@ textarea::placeholder {
   border-color: transparent;
 }
 
-.licence__agreed {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
+@media screen and (min-width: 480px) {
+  .licence__agreed {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .licence__agreed {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }
 
 .licence__terms {
